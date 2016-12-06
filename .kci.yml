@@ -5,7 +5,7 @@ pipeline:
       - chdir go
       - go build helloworld.go
   index.qiniu.com/kci/plugin_docker:
-    repo: wanglei/sample-helloworld
+    repo: wanglei2/sample-helloworld
     workdir: ./go
     tag: latest
     kirk_update: wanglei.wanglei2/default/helloworld
