@@ -8,7 +8,7 @@ pipeline:
     repo: wanglei/sample-helloworld
     workdir: ./go
     tag: latest
-    kirk_update: wanglei.wanglei2/helloworld
+    kirk_update: wanglei.wanglei2/default.helloworld
   index.qiniu.com/kci/plugin_email:
     recipients:
       - 541004974@qq.com
