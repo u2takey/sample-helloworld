@@ -7,7 +7,7 @@ import (
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Handle", r.Method, r.URL)
-	fmt.Fprintf(w, "Hello world from my Go program again.\n")
+	fmt.Fprintf(w, "Hello world from my Go program again1.\n")
 }
 
 func main() {
