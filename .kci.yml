@@ -14,7 +14,7 @@ pipeline:
       source: .
       target: /
       delete: true
-      zone: z0
+      zone: 1
   index.qiniu.com/kci/plugin_email:
     recipients:
       - 541004974@qq.com
