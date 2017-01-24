@@ -9,6 +9,12 @@ pipeline:
     workdir: ./go
     tag: latest
     kirk_autoupdate: [ wanglei.wanglei2/default/helloworld, wanglei.wangtest/default/helloworld1 ] 
+  index.qiniu.com/kci/plugin_kodo:
+      bucket: test
+      source: .
+      target: /
+      delete: true
+      zone: 0
   index.qiniu.com/kci/plugin_email:
     recipients:
       - 541004974@qq.com
