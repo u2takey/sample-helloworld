@@ -4,6 +4,15 @@ pipeline:
     commands:
       - chdir go
       - go build helloworld.go
+      - echo $TESTA
+  build:
+    image: index.qiniu.com/kci/golang:1.6
+    commands:
+      - chdir go
+      - go build helloworld.go
+      - echo "has testa" 
+    when:
+      environment: TESTA
 #  index.qiniu.com/kci/plugin_docker:
 #    repo: wanglei/sample-helloworld
 #    workdir: ./go
