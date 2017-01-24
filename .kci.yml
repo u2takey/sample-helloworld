@@ -4,11 +4,11 @@ pipeline:
     commands:
       - chdir go
       - go build helloworld.go
-  index.qiniu.com/kci/plugin_docker:
-    repo: wanglei/sample-helloworld
-    workdir: ./go
-    tag: latest
-    kirk_autoupdate: [ wanglei.wanglei2/default/helloworld, wanglei.wangtest/default/helloworld1 ] 
+#  index.qiniu.com/kci/plugin_docker:
+#    repo: wanglei/sample-helloworld
+#    workdir: ./go
+#    tag: latest
+#    kirk_autoupdate: [ wanglei.wanglei2/default/helloworld, wanglei.wangtest/default/helloworld1 ] 
   index.qiniu.com/kci/plugin_kodo:
       bucket: test
       source: .
