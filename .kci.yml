@@ -2,7 +2,7 @@ pipeline:
   build:
     image: index.qiniu.com/kci/golang:1.6
     commands:
-      - chdir ./go
+      - ls -l
       - go build helloworld.go
   index.qiniu.com/kci/plugin_docker:
     repo: wanglei/sample-helloworld
