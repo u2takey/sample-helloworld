@@ -12,7 +12,8 @@ pipeline:
       - go build helloworld.go
       - echo "has testa" 
     when:
-      environment: TESTA
+      matrix:
+        TESTA: "a"
 #  index.qiniu.com/kci/plugin_docker:
 #    repo: wanglei/sample-helloworld
 #    workdir: ./go
