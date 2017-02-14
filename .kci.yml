@@ -5,26 +5,26 @@ pipeline:
       - chdir go
       - go build helloworld.go
       - echo $TESTA
-  build:
-    image: index.qiniu.com/kci/golang:1.6
-    commands:
-      - chdir go
-      - go build helloworld.go
-      - echo "has testa" 
-    when:
-      matrix:
-        TESTA: "a"
+#  build:
+#    image: index.qiniu.com/kci/golang:1.6
+#    commands:
+#      - chdir go
+#      - go build helloworld.go
+#      - echo "has testa" 
+#    when:
+#      matrix:
+#        TESTA: "a"
 #  index.qiniu.com/kci/plugin_docker:
 #    repo: wanglei/sample-helloworld
 #    workdir: ./go
 #    tag: latest
 #    kirk_autoupdate: [ wanglei.wanglei2/default/helloworld, wanglei.wangtest/default/helloworld1 ] 
-  index.qiniu.com/kci/plugin_kodo:
-      bucket: test
-      source: .
-      target: /
-      delete: true
-      zone: 1
+#  index.qiniu.com/kci/plugin_kodo:
+#      bucket: test
+#      source: .
+#      target: /
+#      delete: true
+#      zone: 1
   index.qiniu.com/kci/plugin_email:
     recipients:
       - 541004974@qq.com
