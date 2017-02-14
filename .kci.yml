@@ -35,10 +35,3 @@ pipeline:
     webhook: https://hooks.slack.com/services/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
     channel: kirk_kci_alert
     recipient: wanglei
-    template: |
-       {{ #success build.status }}		    
-       build {{ repo.owner }} / {{ repo.name }} / {{ build.branch }} : {{ build.number }} succeeded.		 +    
-       {{ else }}		
-       build {{ repo.owner }} / {{ repo.name }} / {{ build.branch }} : {{ build.number }} failed. Fix me please.		
-       {{ /success }}		
-       {{ build.event }} by {{ build.author }} at {{ build.started }}
