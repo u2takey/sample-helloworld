@@ -6,7 +6,7 @@ pipeline:
       - go build helloworld.go
       - echo $TESTA
       - sleep 10
-      - telnet localhost 3306
+      - lsof -i :3306
 #  build:
 #    image: index.qiniu.com/kci/golang:1.6
 #    commands:
