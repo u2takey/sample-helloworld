@@ -39,3 +39,6 @@ pipeline:
 services:
   database:
     image: index.qiniu.com/library/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=test
+      - MYSQL_DATABASE=test
