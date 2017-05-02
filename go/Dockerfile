@@ -1,3 +1,3 @@
-FROM index.qiniu.com/library/ubuntu
+FROM alpine
 ADD helloworld /
 CMD ["/helloworld"]
