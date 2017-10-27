@@ -1,3 +1,3 @@
-FROM ubuntu
-ADD helloworld /
+FROM alpine
+ADD ./go /helloworld
 CMD ["/helloworld"]

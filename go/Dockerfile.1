@@ -1,0 +1,9 @@
+FROM index.qbox.me/wanglei/golang:latest
+WORKDIR /go/src/github.com/u2takey/helloworld
+COPY helloworld.go .
+RUN go build -o app .
+
+FROM alpine:latest
+WORKDIR /root/
+COPY --from=0 app .
+CMD ["./app"]
