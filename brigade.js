@@ -8,7 +8,7 @@ events.on("push", () => {
   console.log(" **** I'm a GitHub 'push' handler")
 })
 
-events.on("exec", (e, p) => {
+events.on("push", (e, p) => {
   var one = new Job("one", "alpine:3.4")
   var two = new Job("two", "alpine:3.4")
 
